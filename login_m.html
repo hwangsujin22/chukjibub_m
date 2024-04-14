@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chukjibub_login_m</title>
+  <!-- 1. 여백 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 공통서식 -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- 3. 서브페이지 헤더, 푸터 서식 -->
+  <link href="./css/sub_common.css" rel="stylesheet" type="text/css">
+  <!-- 4. 모바일 서식 -->
+  <link href="./css/login_m.css" rel="stylesheet" type="text/css">
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="./script/common.js"></script>
+</head>
+<body>
+  <!-- 상단헤더영역 시작 -->
+  <form name="검색폼" method="post" action="send.php">
+    <header>
+      <div class="h_inner">
+        <div class="h_top">
+          <h1><a href="./index.html" title="메인으로 바로가기"><img src="./images/b_logo.png" alt="로고"></a></h1>
+          <section class="search">
+            <h2 class="none">제목</h2>
+            <div class="search_box">
+              <fieldset>
+                <input type="text" name="search" maxlength="30" placeholder="검색">
+                <button type="submit" class="btn_search"><img src="./images/search_btn.png" alt="검색버튼"></button>
+              </fieldset>
+            </div>
+          </section>
+          <ul class="lnb">
+            <li><a href="javascript:;" title="전체보기" id="m_toggle"><i class="fas fa-bars"></i></a></li>
+            <li><a href="./login_m.html" title="로그인">로그인</a></li>
+          </ul>
+        </div> <!-- 글로벌 내비게이션 시작 -->
+        <div class="nav_wrap">
+          <nav class="h_bottom">
+            <ul class="gnb">
+              <li><a href="javascript:;" title="닫기" class="c_btn"><i class="fas fa-times"></i></a></li>
+              <li><a href="./sub_info.html" title="소개하기">소개하기</a></li>
+              <li><a href="javascript:;" title="어떤걸즐길까?">어떤걸즐길까? <i class="fas fa-angle-down"></i></a>
+                <ul class="sub">
+                  <li><a href="sub_locationseoul_m.html" title="지역별">지역별</a></li>
+                  <li><a href="javascript:;" title="날짜별">날짜별</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:;" title="2배로 즐기기">2배로 즐기기 <i class="fas fa-angle-down"></i></a>
+                <ul class="sub">
+                  <li><a href="javascript:;" title="맛집">맛집</a></li>
+                  <li><a href="javascript:;" title="주변관광">주변관광</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:;" title="테마">테마 <i class="fas fa-angle-down"></i></a>
+                <ul class="sub">
+                  <li><a href="#" title="가족">가족</a></li>
+                  <li><a href="#" title="친구">친구</a></li>
+                  <li><a href="#" title="계절">계절</a></li>
+                  <li><a href="#" title="민속/전통">민속/전통</a></li>
+                  <li><a href="#" title="스포츠/레져">스포츠/레져</a></li>
+                  <li><a href="#" title="교육/체험">교육/체험</a></li>
+                  <li><a href="#" title="공연전시/행사">공연전시/행사</a></li>
+                  <li><a href="#" title="특산물">특산물</a></li>
+                </ul>
+              </li>
+              <li><a href="notice_m.html" itle="공지사항">공지사항</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </form>
+
+  <!-- 메인영역 시작 -->
+  <main>
+    <div class="main_0">
+      <div class="main_1">
+        <h2 class="people">회원로그인</h2>
+        <input type="text" class="id" placeholder=" 아이디"  maxlength="15"><p>
+        <input type="text" class="pw" placeholder=" 비밀번호"  maxlength="15"><p>
+        <p class="checkbox"><input type="checkbox" title="자동로그인" id="auto"><label for="auto">자동로그인</label></p>
+        <a href="./index.html" title="로그인" class="login_btn">로그인</a><p></p>
+        <a href="#" title="비밀번호 찾기" class="find_pw">비밀번호 찾기</a> &#x007C; <a href="#" title="아이디 찾기" class="find_id">아이디 찾기</a> &#x007C; <a href="./join_m.html" title="회원가입" class="join">회원가입</a>
+      </div>
+
+      <div class="main_2">
+        <p id="social_txt">소셜 로그인</p>
+      <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/" title="네이버 로그인">
+        <img src="./images/naver_logo.png" alt="네이버 로그인" class="n_logo">
+      </a>
+      <a href="https://accounts.kakao.com/login/?continue=https%3A%2F%2Fcs.kakao.com%2Fhelps%3Fservice%3D52%26category%3D166%26locale%3Dko#login" title="카카오 로그인">
+        <img src="./images/kakao_logo.png" alt="카카오 로그인" class="k_logo">
+      </a>
+      <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.co.kr%2F%3Fhl%3Dko&ec=GAZAmgQ&hl=ko&ifkv=AVQVeyyOODOg3CNl4YVvQnaOTryNll4ZNfkxijv83n-lkjh5t8kb6GXedjhBLT0W4iEbD7IIFBuV&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S268560936%3A1700114049088031&theme=glif" title="구글 로그인">
+        <img src="./images/google_logo.png" alt="구글 로그인" class="g_logo"></a><p></p>
+
+        <a href="./index.html" title="로그인" class="b_login_btn">비회원으로 로그인</a>
+      </div>
+    </div>
+
+    <!-- top버튼 영역  -->
+    <div class="top_btn_box">
+      <a href="#" title="top버튼" class="top_btn"><span><img src="./images/top_btn.png" alt="top버튼"></span></a>
+    </div>
+  </main>
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <h2><img src="./images/logo.png" alt="로고"></h2>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+            <li><a href="#" title="이용약관">이용약관</a></li>
+            <li><a href="#" title="위치정보이용약관">위치정보이용약관</a></li>
+          </ul>
+        </nav>
+
+        <div class="c_info">
+          <ul>
+            <li class="info01">회사명 : 축지법</li>
+            <li class="info02">대표자 : 홍길동</li>
+            <li class="info03">대표번호 :1234-5678</li>
+            <li class="info04">주소 : 서울특별시 종로구 수표로 96 국일관 드림팰리스 2층</li>
+            <!-- <li class="info05">5</li> -->
+            <!-- <li class="info06">6</li> -->
+            <li class="info07">사업자등록번호 : 000-00-00000</li>
+            <!-- <li class="info08">8</li> -->
+            <!-- <li class="info09">9</li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="sns_btn">
+        <ul>
+          <li><a href="#" title="페이스북으로 바로가기"><img src="./images/facebook_btn.png" alt="페이스북 버튼"></a></li>
+          <li><a href="#" title="인스타그랩으로 바로가기"><img src="./images/insta_btn.png" alt="인스타그램 버튼"></a></li>
+          <li><a href="#" title="유튜브으로 바로가기"><img src="./images/youtube_btn.png" alt="유튜브 버튼"></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

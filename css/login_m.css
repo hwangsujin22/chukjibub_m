@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+.people{font-size: 22px;
+padding-bottom: 20px;}
+.search_box button{
+  border: none;
+  padding: 6px 4px 2px 4px;
+  background: #fff;
+}
+
+main{
+    padding: 150px 0px 100px;
+    line-height: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    }
+.none{display: none;}
+fieldset{
+  margin:0px auto;
+}
+
+.main_1{
+  width: 534px; height: 456px;
+border:none;
+border-radius: 10px;
+padding: 40px 0px 20px 0px;
+}
+
+.id, .pw{width: 400px; height: 55px;
+margin-bottom: 20px;
+border:none;
+background-color:#f8f8f8;
+border-radius: 10px;}
+
+.login_btn, .b_login_btn{font-size: 18px; font-weight: bold; border-radius: 30px; }
+.login_btn{padding:8px 120px; background: #ff824c; color: #fff;}
+.b_login_btn{border: 2px solid #ff5207; padding: 8px 70px;}
+
+.n_logo{width: 50px; height: 50px;}
+.k_logo{width: 48px; height: 48px;}
+.g_logo{width: 44px; height: 44px;}
+
+.main_2 > a > img{
+  padding: 0px 20px 10px 0px;
+transform: translateX(8px);
+}
+
+.find_pw, .find_id, .join{
+  color: #363535;
+  text-decoration: none;
+  font-size: 15px;
+  
+}
+#social_txt{
+  font-size: 15px;
+  font-weight: 500;
+}
+.people{transform: translateY(-17px);}
+.checkbox{
+  transform:translate(-165px,-20px );
+font-size: 12px;}

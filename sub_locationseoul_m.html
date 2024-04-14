@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chukjibub_location_m</title>
+  <!-- 1. 초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <!-- 2. 공통서식 -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <!-- 3. 서브페이지 헤더, 푸터 서식 -->
+  <link href="./css/sub_common.css" rel="stylesheet" type="text/css">
+  <!-- 4. 모바일 서식 -->
+  <link rel="stylesheet" href="./css/sub_locationseoul_m.css" type="text/css">
+  <!-- 5. 폰트어썸 서식 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="./script/common.js"></script>
+</head>
+
+<body>
+  
+  <!-- 상단헤더영역 시작 -->
+  <form name="검색폼" method="post" action="send.php">
+    <header>
+      <div class="h_inner">
+        <div class="h_top">
+          <h1><a href="./index.html" title="메인으로 바로가기"><img src="./images/b_logo.png" alt="로고"></a></h1>
+          <section class="search">
+            <h2 class="none">none</h2>
+            <div class="search_box">
+              <fieldset>
+                <input type="text" name="search" maxlength="30" placeholder="검색">
+                <button type="submit" class="btn_search"><img src="./images/search_btn.png" alt="검색버튼"></button>
+              </fieldset>
+            </div>
+          </section>
+          <ul class="lnb">
+            <li><a href="javascript:;" title="전체보기" id="m_toggle"><i class="fas fa-bars"></i></a></li>
+            <li><a href="./login_m.html" title="로그인">로그인</a></li>
+          </ul>
+        </div> <!-- 글로벌 내비게이션 시작 -->
+        <div class="nav_wrap">
+          <nav class="h_bottom">
+            <ul class="gnb">
+              <li><a href="javascript:;" title="닫기" class="c_btn"><i class="fas fa-times"></i></a></li>
+              <li><a href="./sub_info.html" title="소개하기">소개하기</a></li>
+              <li><a href="javascript:;" title="어떤걸즐길까?">어떤걸즐길까? <i class="fas fa-angle-down"></i></a>
+                <ul class="sub">
+                  <li><a href="sub_locationseoul_m.html" title="지역별">지역별</a></li>
+                  <li><a href="javascript:;" title="날짜별">날짜별</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:;" title="2배로 즐기기">2배로 즐기기 <i class="fas fa-angle-down"></i></a>
+                <ul class="sub">
+                  <li><a href="javascript:;" title="맛집">맛집</a></li>
+                  <li><a href="javascript:;" title="주변관광">주변관광</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:;" title="테마">테마 <i class="fas fa-angle-down"></i></a>
+                <ul class="sub">
+                  <li><a href="#" title="가족">가족</a></li>
+                  <li><a href="#" title="친구">친구</a></li>
+                  <li><a href="#" title="계절">계절</a></li>
+                  <li><a href="#" title="민속/전통">민속/전통</a></li>
+                  <li><a href="#" title="스포츠/레져">스포츠/레져</a></li>
+                  <li><a href="#" title="교육/체험">교육/체험</a></li>
+                  <li><a href="#" title="공연전시/행사">공연전시/행사</a></li>
+                  <li><a href="#" title="특산물">특산물</a></li>
+                </ul>
+              </li>
+              <li><a href="notice_m.html" title="공지사항">공지사항</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    </form>
+  
+  
+  <!-- 메인영역 -->
+  <main>
+    <section class="page_n">
+      <h2 class="no_title">none</h2>
+      <p>어떤걸 즐길까? &#x3009; 지역별</p>
+    </section>
+
+      <div class="ground_pink">
+        <p>지역별축제를 알려줄께!</p>
+        <div class="location">
+          <ul>
+            <li><a href="#" title="서울">서울</a></li>
+            <li><a href="#" title="인천">인천</a></li>
+            <li><a href="#" title="대전">대전</a></li>
+            <li><a href="#" title="세종">세종</a></li>
+            <li><a href="#" title="광주">광주</a></li>
+            <li><a href="#" title="광주">부산</a></li>
+          </ul>
+        </div>
+
+      <!--축제 미리보기 슬라이드 창 -->
+      <section class="pre_fa">
+        <h2 class="no_title">&nbsp;</h2>
+        <div class="swiper-slide-box">
+          <div class="swiper-slide">
+            <a href="#" title="한국의집">
+                <img src="./images/seoul/hangookui_jib.png" alt="한국의집" class="pre_fa_img">
+              <div class="text_box">
+                <span class="pre_fa_title">한국의집</span>
+                <p>프리미엄 궁중다과를 봄,여름,</p>
+                <p>가을,겨울 시즌별로...</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title="서울에서 만나는 세계여행">
+              <span class="pre_fa_img">
+                <img src="./images/seoul/pre_main_img02.png" alt="서울에서 만나는 세계여행">
+              </span>
+              <div class="text_box">
+                <span class="pre_fa_title">서울에서 만나는 세계여행</span>
+                <p>외국인과 함께 다양한 해외 문화 교류</p>
+                <p>활동을 경험할 수 있다.</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title="강동 북 페스티벌">
+              <span class="pre_fa_img">
+                <img src="./images/seoul/pre_main_img03.png" alt="강동 북 페스티벌">
+              </span>
+              <div class="text_box">
+                <span class="pre_fa_title">강동 북 페스티벌</span>
+                <p>인공지능시대에 사람과 사람</p>
+                <p>그리고 사람과 책의 소통을...</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title="양재플라워페스타">
+              <span class="pre_fa_img">
+                <img src="./images/seoul/pre_main_img04.png" alt="양재플라워페스타">
+              </span>
+              <div class="text_box">
+                <span class="pre_fa_title">양재플라워페스타</span>
+                <p>꽃과 함께하는 일상생활 활성화</p>
+                <p>그리고 꽃과 식물을 통해 힐링</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title="노원달빛산책">
+                <img src="./images/seoul/pre_main_img05.png" alt="노원달빛산책" class="pre_fa_img">
+              <div class="text_box">
+                <span class="pre_fa_title">노원달빛산책</span>
+                <p>2020년부터 시작해 올해로 4회로</p>
+                <p>맞이하는 노원의 대표 미술축제.</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title="양재아트살롱">
+              <span class="pre_fa_img">
+                <img src="./images/seoul/pre_main_img06.png" alt="양재아트살롱">
+              </span>
+              <div class="text_box">
+                <span class="pre_fa_title">양재아트살롱</span>
+                <p>매주 금,토요일마다</p>
+                <p>만나는 양재천 프리마켓</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title="서울거리공연 구석구석라이브">
+              <span class="pre_fa_img">
+                <img src="./images/seoul/pre_main_img07.png" alt="서울거리공연 구석구석라이브">
+              </span>
+              <div class="text_box">
+                <span class="pre_fa_title">서울거리공연 구석구석 라이브</span>
+                <p>일년 내내 발길 닿는 어디든...</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title="중구 도심산업페스타">
+              <span class="pre_fa_img">
+                <img src="./images/seoul/pre_main_img08.png" alt="중구 도심산업페스타">
+              </span>
+              <div class="text_box">
+                <span class="pre_fa_title">중구 도심산업 페스타</span>
+                <p>봉제, 인쇄, 조명 등의 도심산업을</p>
+                <p>활성화 하기 위해 준비한 페스타.</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title="K-푸드페스타">
+              <span class="pre_fa_img">
+                <img src="./images/seoul/pre_main_img09.png" alt="K-푸드페스타">
+              </span>
+              <div class="text_box">
+                <span class="pre_fa_title">K-푸드페스타 in 서울</span>
+                <p>바쁘다 바빠 현대사회</p>
+                <p>행복한 우리를 위해 먹는데...</p>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title="밤의 석조전">
+              <span class="pre_fa_img">
+                <img src="./images/seoul/pre_main_img10.png" alt="밤의 석조전">
+              </span>
+              <div class="text_box">
+                <span class="pre_fa_title">밤의 석조전</span>
+                <p>덕수궁 석조전을 활용한</p>
+                <p>궁중문화 체험프로그램</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="navigation">
+          <span><img src="./images/page_navigation.png" alt="내비게이션"></span>
+          <p>1/10</p>
+        </div>
+      </section>
+      
+    </div>
+
+    <section class="main_con">
+      <h2 class="no_title">none</h2>
+      <div class="main_con_img">
+        <img src="./images/seoul/seoul_main_img.png" alt="서울">
+      </div>
+      <form name="category" method="post" action="sand.php" >
+        <div class="cate_box">
+          <label for="btn01" class="no_title">분기별
+            <select name="btn1" id="btn01">
+              <option value="">분기별</option>
+              <option value="">1월</option>
+              <option value="">2월</option>
+              <option value="">3월</option>
+              <option value="">4월</option>
+              <option value="">5월</option>
+              <option value="">6월</option>
+              <option value="">7월</option>
+              <option value="">8월</option>
+              <option value="">9월</option>
+              <option value="">10월</option>
+              <option value="">11월</option>
+              <option value="">12월</option>
+            </select>
+          </label>
+        <span></span>
+        <label for="btn02" class="no_title">카테고리
+          <select name="btn2" id="btn02">
+            <option value="">카테고리</option>
+            <option value="">카테고리</option>
+            <option value="">카테고리</option>
+            <option value="">카테고리</option>
+            <option value="">카테고리</option>
+          </select>
+        </label>
+      </div>
+      </form>
+
+        <div class="event_s">
+          <ul>
+            <li><a href="#" title="진행전">진행전</a></li>
+            <li>|</li>
+            <li><a href="#" title="진행중">진행중</a></li>
+          </ul>
+              </div>
+      <!-- 메인콘텐츠 리스트 -->
+      <div class="main_con_list">
+        <ul>
+          <li>
+            <a href="#" title="한국의 집"><img src="./images/seoul/main_c01.png" alt="한국의집"></a>
+            <span class="title">한국의 집 고호재</span>
+            <p>2023.10.24~2023.11.30</p>
+            <p>서울 중구</p>
+          </li>
+          <li>
+            <a href="#" title="K-푸드페스타"><img src="./images/seoul/main_c02.png" alt="K-푸드페스타"></a>
+            <span class="title">K-푸드페스타</span>
+            <p>2023.11.10~2023.11.12</p>
+            <p>서울 서초구</p>
+          </li>
+          <li>
+            <a href="#" title="명동맥주페스티벌"><img src="./images/seoul/main_c03.png" alt="명동맥주페스티벌"></a>
+            <span class="title">명동맥주페스티벌</span>
+            <p>2023.10.06~2023.10.08</p>
+            <p>서울 중구</p>
+          </li>
+          <li>
+            <a href="#" title="한성백제문화제"><img src="./images/seoul/main_c04.png" alt="한성백제문화제"></a>
+            <span class="title">한성백제문화제</span>
+            <p>2023.09.22~2023.09.24</p>
+            <p>서울 송파구</p>
+          </li>
+          <li>
+            <a href="#" title="경복궁 별빛야행"><img src="./images/seoul/main_c05.png" alt="경복궁 별빛야행"></a>
+            <span class="title">경복궁 별빛야행</span>
+            <p>2023.09.08~2023.10.08</p>
+            <p>서울 종로구</p>
+          </li>
+          <li>
+            <a href="#" title="페띠앙&로제오"><img src="./images/seoul/main_c06.png" alt="페띠앙&로제오"></a>
+            <span class="title">페띠앙&로제 오</span>
+            <p>2023.07.08~2023.07.08</p>
+            <p>서울 성동구</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div class="more_view">
+      <a href="#" title="더보기">
+        <p>더보기<i class="fa-solid fa-chevron-down"></i></p>
+      </a>
+    </div>
+  </main>
+
+
+  <!-- 하단 푸터 영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <h2><img src="./images/logo.png" alt="로고"></h2>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+            <li><a href="#" title="이용약관">이용약관</a></li>
+            <li><a href="#" title="위치정보이용약관">위치정보이용약관</a></li>
+          </ul>
+        </nav>
+
+        <div class="c_info">
+          <ul>
+            <li class="info01">회사명 : 축지법</li>
+            <li class="info02">대표자 : 홍길동</li>
+            <li class="info03">대표번호 :1234-5678</li>
+            <li class="info04">주소 : 서울특별시 종로구 수표로 96 국일관 드림팰리스 2층</li>
+            <!-- <li class="info05">5</li> -->
+            <!-- <li class="info06">6</li> -->
+            <li class="info07">사업자등록번호 : 000-00-00000</li>
+            <!-- <li class="info08">8</li> -->
+            <!-- <li class="info09">9</li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="sns_btn">
+        <ul>
+          <li><a href="#" title="페이스북으로 바로가기"><img src="./images/facebook_btn.png" alt="페이스북 버튼"></a></li>
+          <li><a href="#" title="인스타그랩으로 바로가기"><img src="./images/insta_btn.png" alt="인스타그램 버튼"></a></li>
+          <li><a href="#" title="유튜브으로 바로가기"><img src="./images/youtube_btn.png" alt="유튜브 버튼"></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+
+</body>
+</html>

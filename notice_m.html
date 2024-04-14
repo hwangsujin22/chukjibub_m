@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chukjibub_notice_m</title>
+  <!-- 1. 여백 초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!-- 2. 공통서식 -->
+  <link href="./css/common.css" rel="stylesheet" type="text/css">
+  <!-- 3. 서브페이지 헤더, 푸터 서식 -->
+  <link href="./css/sub_common.css" rel="stylesheet" type="text/css">
+  <!-- 4. 모바일 서식 -->
+  <link href="./css/notice_m.css" rel="stylesheet" type="text/css">
+  <!-- 5. 폰트어썸 서식 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="./script/common.js"></script>
+
+</head>
+<body>
+  <!-- 상단헤더영역 시작 -->
+  <form name="검색폼" method="post" action="send.php">
+    <header>
+      <div class="h_inner">
+        <div class="h_top">
+          <h1><a href="./index.html" title="메인으로 바로가기"><img src="./images/b_logo.png" alt="로고"></a></h1>
+          <section class="search">
+            <h2 class="none">제목</h2>
+            <div class="search_box">
+              <fieldset>
+                <input type="text" name="search" maxlength="30" placeholder="검색">
+                <button type="submit" class="btn_search"><img src="./images/search_btn.png" alt="검색버튼"></button>
+              </fieldset>
+            </div>
+          </section>
+          <ul class="lnb">
+            <li><a href="javascript:;" title="전체보기" id="m_toggle"><i class="fas fa-bars"></i></a></li>
+            <li><a href="./login_m.html" title="로그인">로그인</a></li>
+          </ul>
+        </div> <!-- 글로벌 내비게이션 시작 -->
+        <div class="nav_wrap">
+          <nav class="h_bottom">
+            <ul class="gnb">
+              <li><a href="javascript:;" title="닫기" class="c_btn"><i class="fas fa-times"></i></a></li>
+              <li><a href="./sub_info.html" title="소개하기">소개하기</a></li>
+              <li><a href="javascript:;" title="어떤걸즐길까?">어떤걸즐길까? <i class="fas fa-angle-down"></i></a>
+                <ul class="sub">
+                  <li><a href="sub_locationseoul_m.html" title="지역별">지역별</a></li>
+                  <li><a href="javascript:;" title="날짜별">날짜별</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:;" title="2배로 즐기기">2배로 즐기기 <i class="fas fa-angle-down"></i></a>
+                <ul class="sub">
+                  <li><a href="javascript:;" title="맛집">맛집</a></li>
+                  <li><a href="javascript:;" title="주변관광">주변관광</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:;" title="테마">테마 <i class="fas fa-angle-down"></i></a>
+                <ul class="sub">
+                  <li><a href="#" title="가족">가족</a></li>
+                  <li><a href="#" title="친구">친구</a></li>
+                  <li><a href="#" title="계절">계절</a></li>
+                  <li><a href="#" title="민속/전통">민속/전통</a></li>
+                  <li><a href="#" title="스포츠/레져">스포츠/레져</a></li>
+                  <li><a href="#" title="교육/체험">교육/체험</a></li>
+                  <li><a href="#" title="공연전시/행사">공연전시/행사</a></li>
+                  <li><a href="#" title="특산물">특산물</a></li>
+                </ul>
+              </li>
+              <li><a href="notice_m.html" itle="공지사항">공지사항</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </form>
+    
+  <!-- 메인영역 -->
+  <main>
+    <h2>공지사항</h2>
+
+    
+      <section class="notice_box01">
+        <h2 class="none">공지사항</h2>
+        <article class="notice_1">
+          <h3 class="none">에덴벚꽃길 벚꽃축제</h3>
+          <a href="ulsan.html" title="에덴벚꽃길 벚꽃축제" class="no1">
+        <img src="./images/notice_img_1.jpg" alt="벚꽃축제" class="notice_img">
+        <img src="./images/new.png" alt="new" class="notice_img_new">
+        <p class="notice_txt1">에덴벚꽃길 벚꽃축제 개최</p>
+        <p class="notice_txt2">2024.04.06</p></a>
+        </article><br>
+      
+        <article class="notice_2">
+          <h3 class="none">청도 프로방스 빛축제</h3>
+          <a href="daejun.html" title="청도 프로방스 빛축제" class="no2">
+          <img src="./images/notice_img_2.jpg" alt="빛축제" class="notice_img">
+        <img src="./images/new.png" alt="new" class="notice_img_new">
+                <p class="notice_txt1">청도 프로방스 빛축제 자원봉사자 모집</p>
+                <p class="notice_txt2">2024.03.01</p></a>
+        </article><br>
+
+        <article class="notice_3">
+          <h3 class="none">오크밸리 3D 라이팅쇼 '소나타오브라이트'</h3>
+          <a href="dance.html" title="오크밸리 3D 라이팅쇼 '소나타오브라이트'" class="no3">
+          <img src="./images/notice_img_3.jpg" alt="라이팅쇼" class="notice_img">
+          <p class="notice_txt1">'소나타오브라이트' 관람 안내</p>
+          <p class="notice_txt2">2024.02.22</p></a>
+        </article><br>
+
+        <article class="notice_4">
+          <h3 class="none">점검</h3>
+          <a href="set.html" title="점검" class="no4">
+          <img src="./images/notice_img_4.png" alt="점검" class="notice_img">
+          <p class="notice_txt1">'축지법' 사이트 시스템 점검(00:00~02:00)</p>
+          <p class="notice_txt2">2024.01.01</p>
+          </a>
+        </article>
+
+    <div class="number">
+      <a href="#" title="1" class="btn1">1</a>
+      <a href="#" title="2" class="btn">2</a>
+      <a href="#" title="3" class="btn">3</a>
+      <a href="#" title="4" class="btn">4</a>
+      <a href="#" title="5" class="btn">5</a>
+      <a href="#" title="다음" class="btn">></a>
+      <a href="#" title="다다음" class="btn">>></a>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <div class="f_inner">
+      <h2><img src="./images/logo.png" alt="로고"></h2>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
+            <li><a href="#" title="이용약관">이용약관</a></li>
+            <li><a href="#" title="위치정보이용약관">위치정보이용약관</a></li>
+          </ul>
+        </nav>
+
+        <div class="c_info">
+          <ul>
+            <li class="info01">회사명 : 축지법</li>
+            <li class="info02">대표자 : 홍길동</li>
+            <li class="info03">대표번호 :1234-5678</li>
+            <li class="info04">주소 : 서울특별시 종로구 수표로 96 국일관 드림팰리스 2층</li>
+            <!-- <li class="info05">5</li> -->
+            <!-- <li class="info06">6</li> -->
+            <li class="info07">사업자등록번호 : 000-00-00000</li>
+            <!-- <li class="info08">8</li> -->
+            <!-- <li class="info09">9</li> -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="sns_btn">
+        <ul>
+          <li><a href="#" title="페이스북으로 바로가기"><img src="./images/facebook_btn.png" alt="페이스북 버튼"></a></li>
+          <li><a href="#" title="인스타그랩으로 바로가기"><img src="./images/insta_btn.png" alt="인스타그램 버튼"></a></li>
+          <li><a href="#" title="유튜브으로 바로가기"><img src="./images/youtube_btn.png" alt="유튜브 버튼"></a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+</body>
+</html>
