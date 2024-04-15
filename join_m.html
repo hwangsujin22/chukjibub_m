@@ -43,7 +43,7 @@
         <nav class="h_bottom">
           <ul class="gnb">
             <li><a href="javascript:;" title="닫기" class="c_btn"><i class="fas fa-times"></i></a></li>
-            <li><a href="./sub_info.html" title="소개하기">소개하기</a></li>
+            <li><a href="./sub_info_m.html" title="소개하기">소개하기</a></li>
             <li><a href="javascript:;" title="어떤걸즐길까?">어떤걸즐길까? <i class="fas fa-angle-down"></i></a>
               <ul class="sub">
                 <li><a href="sub_locationseoul_m.html" title="지역별">지역별</a></li>
@@ -58,14 +58,14 @@
             </li>
             <li><a href="javascript:;" title="테마">테마 <i class="fas fa-angle-down"></i></a>
               <ul class="sub">
-                <li><a href="#" title="가족">가족</a></li>
-                <li><a href="#" title="친구">친구</a></li>
-                <li><a href="#" title="계절">계절</a></li>
-                <li><a href="#" title="민속/전통">민속/전통</a></li>
-                <li><a href="#" title="스포츠/레져">스포츠/레져</a></li>
-                <li><a href="#" title="교육/체험">교육/체험</a></li>
-                <li><a href="#" title="공연전시/행사">공연전시/행사</a></li>
-                <li><a href="#" title="특산물">특산물</a></li>
+                <li><a href="javascript:;" title="가족">가족</a></li>
+                <li><a href="javascript:;" title="친구">친구</a></li>
+                <li><a href="javascript:;" title="계절">계절</a></li>
+                <li><a href="javascript:;" title="민속/전통">민속/전통</a></li>
+                <li><a href="javascript:;" title="스포츠/레져">스포츠/레져</a></li>
+                <li><a href="javascript:;" title="교육/체험">교육/체험</a></li>
+                <li><a href="javascript:;" title="공연전시/행사">공연전시/행사</a></li>
+                <li><a href="javascript:;" title="특산물">특산물</a></li>
               </ul>
             </li>
             <li><a href="notice_m.html" title="공지사항">공지사항</a></li>
@@ -89,17 +89,16 @@
         <p><input type="text" id="name" maxlength="15"></p>
 
         <span class="text">아이디</span>
-        <p><input type="text" id="id" maxlength="15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="중복확인" class="btn_1">중복확인</a></p>
+        <p><input type="text" id="id" maxlength="15"><a href="#" title="중복확인" class="btn_1">중복확인</a></p>
 
         <span class="text">닉네임</span>
-        <p><input type="text" id="nik" maxlength="15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="중복확인" class="btn_1">중복확인</a></p>
+        <p><input type="text" id="nik" maxlength="15"><a href="#" title="중복확인" class="btn_1">중복확인</a></p>
 
         <span class="text">비밀번호</span>
         <p><input type="text" placeholder="영문자, 숫자, 특수문자(4~15자)" id="pw" maxlength="15"></p>
         <p><input type="text" placeholder="비밀번호 확인" id="pw2" maxlength="15"></p>
-        <span class="text">
-          이메일</span>
-        <p><input type="text" id="email" maxlength="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="코드발송" class="btn_1">코드 발송</a>
+        <span class="text">이메일</span>
+        <p><input type="text" id="email" maxlength="20"><a href="#" title="코드발송" class="btn_1">코드 발송</a>
 
         <p><input type="text" placeholder="인증코드 입력" id="pw3" maxlength="6"></p>
 
@@ -111,7 +110,7 @@
           <option value="KT">KT</option>
           <option value="LG">LG</option>
           </select>
-          <input type="text" id="phone" placeholder=" - 없이 입력하세요." maxlength="11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" title="인증번호발송" class="btn_2">인증번호 발송</a></p>
+          <input type="text" id="phone" placeholder=" - 없이 입력하세요." maxlength="11"><a href="#" title="인증번호발송" class="btn_2">인증번호 발송</a></p>
         <p><input type="text" placeholder="인증번호 입력" id="number" maxlength="6"></p>
 
         <span class="text">주소</span>
@@ -172,11 +171,14 @@
       <article class="agree_2">
         <h3 class="none">이용약관</h3>
         <span class="clause">(필수)</span>
-        <p><input type="checkbox" title="이용약관 동의" id="ch02"><label for="ch02">이용약관 동의</label></p>
+        <p><input type="checkbox" title="이용약관 동의" id="ch02"><label for="ch02"> 이용약관 동의</label></p>
         <p><input type="checkbox" title="개인정보수집및이용" id="ch01"><label for="ch01"> 수집 및 이용, 개인정보 제3자 제공 동의에 모두 동의합니다.</label></p>
       </article>
     </section>
-    <a href="#" title="인증번호발송" class="btn_3">회원가입</a>
+    <div class="join_btn">
+      <a href="#" title="인증번호발송" class="btn_3">회원가입</a>
+    </div>
+    
     </div>
 
     <!-- top버튼 영역  -->
@@ -189,13 +191,13 @@
   <!-- 하단 푸터 영역 시작 -->
   <footer>
     <div class="f_inner">
-      <h2><img src="./images/logo.png" alt="로고"></h2>
+      <h2><a href="index.html" title="메인페이지로 바로가기"><img src="./images/logo.png" alt="로고"></a></h2>
       <div>
         <nav>
           <ul>
-            <li><a href="#" title="개인정보처리방침">개인정보처리방침</a></li>
-            <li><a href="#" title="이용약관">이용약관</a></li>
-            <li><a href="#" title="위치정보이용약관">위치정보이용약관</a></li>
+            <li><a href="javascript:;" title="개인정보처리방침">개인정보처리방침</a></li>
+            <li><a href="javascript:;" title="이용약관">이용약관</a></li>
+            <li><a href="javascript:;" title="위치정보이용약관">위치정보이용약관</a></li>
           </ul>
         </nav>
 
@@ -216,9 +218,9 @@
 
       <div class="sns_btn">
         <ul>
-          <li><a href="#" title="페이스북으로 바로가기"><img src="./images/facebook_btn.png" alt="페이스북 버튼"></a></li>
-          <li><a href="#" title="인스타그랩으로 바로가기"><img src="./images/insta_btn.png" alt="인스타그램 버튼"></a></li>
-          <li><a href="#" title="유튜브으로 바로가기"><img src="./images/youtube_btn.png" alt="유튜브 버튼"></a></li>
+          <li><a href="javascript:;" title="페이스북으로 바로가기"><img src="./images/facebook_btn.png" alt="페이스북 버튼"></a></li>
+          <li><a href="javascript:;" title="인스타그랩으로 바로가기"><img src="./images/insta_btn.png" alt="인스타그램 버튼"></a></li>
+          <li><a href="javascript:;" title="유튜브으로 바로가기"><img src="./images/youtube_btn.png" alt="유튜브 버튼"></a></li>
         </ul>
       </div>
 

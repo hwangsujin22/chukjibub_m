@@ -1,75 +1,89 @@
 @charset "utf-8";
 
-    .none{display: none;}
-    main{line-height: 40px;
-          padding: 250px 0px 100px;
-          }
-    .c_wrap{width: 640px;
-            margin: 0px auto;
-            }
-    .text{font-size: 14px;
-    font-weight: 400;}
-    #name, #nik, #pw, #pw2, #pw3, #email, .report, #phone, #number, .adress_1, .adress_2, #id
-    {border:1px solid #d3dae6;
-      border-radius: 5px;
-    }
-    #name, #id, #nik{
-      width: 190px; height: 40px;
-    }
-    #email{width: 350px; height:40px;}
-    #pw, #pw2{width:350px; height: 40px;
-    margin-bottom: 5px;}
-    #pw3{width:190px; height: 40px;}
-    #email{margin-bottom: 10px;}
-    #pw3, #number{width:190px; height: 40px;
-      margin-top: 5px;}
-    .btn_1{
-      padding: 10px 38px 10px 38px;
-      background-color: #ff824c;
-      border: 1px solid #ff824c;
-      color: #fff;
-      border-radius: 5px;
-      font-size: 14px;
-      font-weight: 500;
-    }
-    .btn_2{
-      padding: 10px 26px 10px 26px;
-      background-color: #ff824c;
-      border: 1px solid #ff824c;
-      border-radius: 5px;
-      color:#fff;
-      font-size: 14px;
-      font-weight: 500;
-    }
-    .btn_3{
-      padding: 10px 80px 10px 80px;
-      background-color: #fff;
-      border: 2px solid #ff824c;
-      border-radius: 30px;
-      color:#363535;
-      font-size: 20px;
-      font-weight: 500;
-      margin-left: 200px;
-    }
-    .btn_3:hover{background-color: #ff824c; color: #fff;}
+.none{display: none;}
+main{line-height:40px;padding:200px 0px 100px;}
+.c_wrap{width:100%;}
+.j_01{padding:10px;}
+.text{font-size:0.9rem;font-weight:400;}
+#name, #nik, #pw, #pw2, #pw3, #email, .report, #phone, #number, .adress_1, .adress_2, #id
+{border:1px solid #d3dae6;border-radius: 5px;height:40px;}
 
-      .report{
-      width: 120px; height: 46px;
-      color: #363535;
-    }
-    #phone{width: 282px; height: 40px;}
-    
-    .adress_1{width: 190px; height: 40px;}
-    .adress_2{width: 150px; height: 40px;}
-    .clause{color: #f00;}
+#name, #id, #nik, #pw3, #number{width:190px;}
+#email{width:300px;}
+#pw, #pw2{width:300px;margin-bottom:5px;}
+#pw3, #number{margin-top:5px;}
+.btn_1, .btn_2{margin-left:10px;}
+.btn_1{
+  padding:10px 38px;
+  background-color: #ff824c;
+  border: 1px solid #ff824c;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.btn_2{
+  padding: 10px 26px 10px 26px;
+  background-color: #ff824c;
+  border: 1px solid #ff824c;
+  border-radius: 5px;
+  color:#fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.join_btn{
+  text-align:center;
+}
+.btn_3{
+  padding:10px 60px;
+  background-color: #fff;
+  border: 2px solid #ff824c;
+  border-radius: 30px;
+  color:#363535;
+  font-size:1.2rem;
+  font-weight:500;
+}
+.btn_3:hover{background-color: #ff824c; color: #fff;}
+.report{width: 120px; height: 46px;color: #363535;}
+#phone{width: 282px;}
+.adress_1{width: 190px;}
+.adress_2{width: 150px;}
+.clause{color: #f00;}
+.agree_1{
+  padding:10px;
+  margin: 30px 0px 60px;
+  line-height: 20px;
+  font-size:0.8rem;
+}
+.join_txt{
+  display:block;
+  text-align:center;
+  font-size:1.2rem;
+  font-weight: bold;
+}
 
-    .agree_1{margin: 30px 0px 60px;
-            line-height: 20px;
-            font-size: 12px;
-          }
-      .join_txt{
-        padding-left:300px ;
-        padding-bottom: 60px;
-        font-size: 22px;
-        font-weight: bold;
-    }
+@media screen and (max-width:630px) {
+  #email{width:190px;}
+  #phone{width:230px;}
+}
+@media screen and (max-width:570px) {
+  #email{width:190px;}
+  .report{width:90px;}
+}
+@media screen and (max-width:540px) {
+  .report{display:block;margin-bottom:5px;}
+  #phone{width:190px;}
+  .adress_1{width:190px;}
+  .adress_2{width:130px;}
+}
+@media screen and (max-width:410px) {
+  main{padding:150px 0px 80px;}
+  .report{display:block;margin-bottom:5px;}
+  #phone{width:190px;}
+  .adress_1{width:190px;}
+  .adress_2{width:130px;}
+  .join_txt, .btn_3{font-size:1.1rem;}
+  .j_01 br:first-of-type{display:none;}
+  .btn_1, .btn_2{padding:7px 10px;}
+  #name, #nik, #pw, #pw2, #pw3, #email, .report, #phone, #number, .adress_1, .adress_2, #id{height:34px;}
+}

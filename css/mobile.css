@@ -587,6 +587,7 @@ footer{
   justify-content:left;
 }
 .f_inner > h2{padding-top:40px;width:20%;}
+.f_inner > h2 > a{display:block;}
 .f_inner > h2 img{width:64%;padding-left:15%;}
 .f_inner > div:first-of-type{width:60%;}
 .f_inner > .sns_btn{width:20%;}
@@ -628,7 +629,7 @@ footer{
 @media screen and (max-width:492px) {
   footer{height:270px;}
   .f_inner{flex-direction:column;justify-content:space-around;}
-  .f_inner > h2{width:90px;padding-top:10px;}
+  .f_inner > h2{width:70px;padding-top:10px;}
   .f_inner > h2 img{width:100%;padding-left:0px;}
   .f_inner > div:first-of-type{width:90%;text-align:center;}
   .f_inner > div:first-of-type > nav > ul{margin:10px 0px 20px;justify-content:space-around;}
