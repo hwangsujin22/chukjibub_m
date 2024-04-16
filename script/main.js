@@ -71,7 +71,6 @@ $(document).ready(function(){
     $(this).next().slideToggle().parent().siblings().find('.sub').hide();
     $('i').removeClass('rotate');
     $(this).find('i').addClass('rotate');
-    $('i').removeClass('rotate');
   });
 
   // 지도 클릭시 배경화면 지정
